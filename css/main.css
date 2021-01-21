@@ -1,0 +1,1 @@
+body,.text-dark,.navbar-toggle-icon,.navbar-nav .nav-link{color:var(--indigo) !important}:root{--indigo: #2A0852}.navbar{background-color:#fff}.navbar-text a.btn-link{transition:0.2s all}.navbar-text a.btn-link:hover{color:var(--primary)}.navbar-brand img{max-height:64px}.navbar-nav .nav-link{transition:0.2s all}.navbar-nav .nav-link:hover{color:rgba(42,8,82,0.8) !important}
