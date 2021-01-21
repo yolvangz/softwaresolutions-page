@@ -1,0 +1,11 @@
+@mixin animated{
+	transition: 0.2s all;
+}
+body{
+	color: var(--indigo) !important;
+}
+.text-dark{
+	@extend body;
+}
+@import "colors";
+@import "header";
