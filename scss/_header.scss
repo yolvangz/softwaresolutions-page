@@ -7,6 +7,10 @@
 .navbar-text a.btn-link:hover{
 	color: var(--primary);
 }
+.navbar-brand a{
+	text-decoration: none;
+	color: var(--indigo);
+}
 .navbar-brand img{
 	max-height: 64px;
 }

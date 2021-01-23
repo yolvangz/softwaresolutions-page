@@ -5,7 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Software Solutions F.P</title>
 		<!-- STYLES -->
-		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/all.min.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="icon" href="images/favicon.png" type="image/png">
@@ -16,10 +18,13 @@
 		<nav class="navbar navbar-expand-md navbar-light sticky-top shadow-sm">
 			<div class="container">
 				<div class="navbar-text order-md-4">
-					<a href="https://www.facebook.com/Software-Solutions-FP-107825851034532" target="facebook" class="btn btn-link"><i class="fab fa-facebook-f fa-lg"></i></a>
+					<a href="https://www.facebook.com/Software-Solutions-FP-107825851034532" target="facebook" class="btn btn-link"><i class="fab fa-facebook-f"></i></a>
 				</div>
 				<div class="navbar-brand mx-auto">
-					<a href="/"><img src="images/favicon.png" alt="Software Solutions F.P." class="img-fluid"></a>
+					<a href="/" class="d-flex align-items-center">
+                        <img src="images/favicon.png" alt="Software Solutions F.P." class="img-fluid">
+                        <h2 class="d-none d-sm-inline pl-2 mb-0 h4">Software Solutions F.P.</h2>
+                    </a>
 				</div>
 				<button class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false">
 				<span class="navbar-toggle-icon"><i class="fas fa-bars fa-lg"></i></span>
@@ -42,15 +47,15 @@
 		<!-- End Navbar -->
 		<!-- Start Hero -->
 		<header id="hero">
-			<div class="container">
-				<div class="row row-cols-md-2 py-5">
-					<div class="col text-center text-dark">
-						<h1 class="mb-2">Bienvenidos a Software Solutions</h1>
+			<div class="container p-md-5">
+				<div class="row row-cols-md-2 pb-md-5">
+					<div class="col text-dark text-center text-md-left p-5 p-md-0 pl-md-5 d-md-flex flex-column justify-content-center">
+						<h1 class="hero-title mb-3">Bienvenidos a Software Solutions</h1>
 						<p class="lead">Nos encargamos de tu tecnología</p>
 					</div>
 					<div class="col d-none d-md-flex justify-content-center align-items-center">
-						<div class="">
-							<img src="#" alt="Imagen de fondo" class="img-fluid">
+						<div class="hero-image-wrapper">
+							<img src="images/1280/motherboard-repair_1280.jpg" alt="Componentes de Computador" title="Componentes de Computador" class="img-fluid">
 						</div>
 					</div>
 				</div>
