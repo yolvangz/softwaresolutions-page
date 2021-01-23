@@ -22,5 +22,5 @@
 	@include animated;
 }
 .navbar-nav .nav-link:hover{
-	color: rgba($indigo, 0.8) !important;
+	color: var(--indigo-80) !important;
 }

@@ -1,12 +1,14 @@
 $white: #ffffff;
 // Custom Colors
 $indigo: #2A0852;
+$indigo-80: rgba($indigo, 0.8);
 // Custom Fonts
 $font1: 'Lato', sans-serif;
 $font2: 'Roboto', sans-serif;
 
 :root{
 	--indigo: #{$indigo};
+	--indigo-80: #{$indigo-80};
 	--sans: #{$font1};
 	--sans-2: #{$font2};
 }

@@ -1,5 +1,19 @@
-
-.card .card-img-top{
-	height: 200px;
-	object-fit: cover;
+.card{
+	.card-body{
+		@extend .card;
+	}
+	.card-img-top{
+		height: 200px;
+		object-fit: cover;
+	}
+	p.lead{
+		line-height: 1.15;
+	}
+	.card-link{
+		text-decoration: underline;
+	}
+	font:{
+		family: $font2 !important;
+		weight: 300 !important;
+	}
 }
