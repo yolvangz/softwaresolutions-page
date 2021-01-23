@@ -1,0 +1,35 @@
+.parallax{
+	width: 100%;
+	min-height: 200px;
+	background:{
+		repeat: no-repeat;
+		position: center center;
+		size: cover;
+		attachment: fixed;
+	}
+	position: relative;
+}
+.parallax .background-overlay{
+	background-color: var(--indigo-20);
+	width: inherit;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.parallax.bg-1{
+	background-image: url(../images/1280/parallax-1.webp);
+}
+.parallax.bg-2{
+	background-image: url(../images/1280/conference-room_1280.jpg);
+}
+@media screen and (min-height: 450px){
+	.parallax{
+		min-height: 450px; 
+	}
+}
+@media screen and (min-height: 720px){
+	.parallax{
+		min-height: 500px; 
+	}
+}

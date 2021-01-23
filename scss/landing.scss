@@ -1,0 +1,34 @@
+@import "main.scss";
+@import "parallax";
+@import "hero";
+@import "services";
+
+.section-description{
+	line-height: 1.8;
+	font-size: 1.0625em;
+}
+#contacto{
+	p{
+		a{
+			color: var(--indigo);
+		}
+		a:hover{
+			color: var(--indigo-80);
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.section-description{
+		font-size: 2em;
+	}
+	#contacto{
+		p{
+			font-size: 1.25em;
+		}
+	}
+	footer{
+		p{
+			font-size: 1.25em;
+		}
+	}
+}

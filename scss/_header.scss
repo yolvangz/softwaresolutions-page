@@ -22,5 +22,10 @@
 	@include animated;
 }
 .navbar-nav .nav-link:hover{
-	color: rgba($indigo, 0.8) !important;
+	color: var(--indigo-80) !important;
+}
+@media screen and (max-width: 768px) {
+	.navbar{
+		font-size: 1.3em;
+	}
 }
