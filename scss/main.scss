@@ -2,10 +2,21 @@
 	transition: 0.2s all;
 }
 body{
+	font-size: 0.8em;
 	color: var(--indigo) !important;
+	font-family: var(--sans);
+}
+.lead{
+	font-weight: inherit;
 }
 .text-dark{
 	@extend body;
 }
-@import "colors";
+.bg-primary{
+	background-color: var(--indigo) !important;
+}
+@import "variables";
 @import "header";
+@import "hero";
+@import "mediaQueries";
+@import "services";
