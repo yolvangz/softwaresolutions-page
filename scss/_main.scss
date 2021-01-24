@@ -1,8 +1,11 @@
 @mixin animated{
 	transition: 0.2s all;
 }
+@import "variables";
+@import "grid";
+@import "header";
+@import "mediaQueries";
 body{
-	font-size: 0.8em;
 	color: var(--indigo) !important;
 	font-family: var(--sans);
 }
@@ -15,6 +18,3 @@ body{
 .bg-primary{
 	background-color: var(--indigo) !important;
 }
-@import "variables";
-@import "header";
-@import "mediaQueries";

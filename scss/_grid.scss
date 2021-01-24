@@ -1,0 +1,56 @@
+$column-size: 1fr;
+.grid{
+	.card{
+		height: 100%;
+	}
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.grid-gap-sm{
+	grid-gap: 1em;
+}
+.grid-cols-1{
+	grid:{
+		template-columns: repeat(1, $column-size);
+		grid-auto-rows: minmax(100px, auto);
+	}
+}
+.grid-cols-2{
+	grid:{
+		template-columns: repeat(2, $column-size);
+		grid-auto-rows: minmax(100px, auto);
+	}
+}
+.grid-cols-3{
+	grid:{
+		template-columns: repeat(3, $column-size);
+		grid-auto-rows: minmax(100px, auto);
+	}
+}
+@media screen and (min-width: 768px) {
+	.grid-cols-md-1{
+		grid:{
+			template-columns: repeat(1, $column-size);
+			grid-auto-rows: minmax(100px, auto);
+		}
+	}
+	.grid-cols-md-2{
+		grid:{
+			template-columns: repeat(2, $column-size);
+			grid-auto-rows: minmax(100px, auto);
+		}
+	}
+	.grid-cols-md-3{
+		grid:{
+			template-columns: repeat(3, $column-size);
+			grid-auto-rows: minmax(100px, auto);
+		}
+	}
+	.grid-cols-md-4{
+		grid:{
+			template-columns: repeat(4, $column-size);
+			grid-auto-rows: minmax(100px, auto);
+		}
+	}
+}
