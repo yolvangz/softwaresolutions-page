@@ -59,6 +59,7 @@ export function landingAnimations (){
 		origin: 'bottom',
 		duration: 2000,
 		distance: '100px',
+		mobile: false,
 		viewFactor: 1
 	});
 	sr.reveal('#quienes-somos .container', {
@@ -76,9 +77,17 @@ export function landingAnimations (){
 	// Services
 	sr.reveal('#servicios .grid-item', {
 		origin: 'top',
-		duration: 2000,
+		duration: 1500,
 		distance: '20px',
 		interval: 333,
 		viewFactor: 0.2
 	});
+	sr.reveal('.contact-item',{
+		dektop: false,
+		origin: 'bottom',
+		duration: 2000,
+		delay: 500,
+		distance: '50px',
+		interval: 400,
+	});	
 }
