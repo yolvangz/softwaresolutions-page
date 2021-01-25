@@ -1,0 +1,62 @@
+[
+	{
+		"name": "Mantenimiento Predictivo de Software",
+		"category": ["Computación", "Reparación"],
+		"shortDescription": "",
+		"DetailedDescription": "Descripción de Mantenimiento Predictivo",
+		"price":{
+			"type": "from",
+			"value": 4.99
+		}
+	},
+	{
+		"name": "Mantenimiento Preventivo de Software",
+		"category": ["Computación", "Reparación"],
+		"shortDescription": "",
+		"DetailedDescription": "Descripción de Mantenimiento Preventivo",
+		"price":{
+			"type": "from",
+			"value": 7.99
+		}
+	},
+	{
+		"name": "Mantenimiento Correctivo de Software",
+		"category": ["Computación", "Reparación"],
+		"shortDescription": "",
+		"DetailedDescription": "Descripción de Mantenimiento Correctivo",
+		"price":{
+			"type": "from",
+			"value": 9.99
+		}
+	},
+	{
+		"name": "Asesoría para Armado de PC Gaming",
+		"category": ["Computación", "Asesoría"],
+		"shortDescription": "",
+		"DetailedDescription": "Descripción de Asesoría para Armado de PC Gaming",
+		"price":{
+			"type": "from",
+			"value": 4.99
+		}
+	},
+	{
+		"name": "Mantenimiento de Cámaras de Seguridad",
+		"category": ["Seguridad", "CCTV"],
+		"shortDescription": "",
+		"DetailedDescription": "Descripción de Mantenimiento de Cámaras de Seguridad",
+		"price":{
+			"type": "variable",
+			"value": null
+		}
+	},
+	{
+		"name": "Clases de Matemática Básica",
+		"category": ["Educación"],
+		"shortDescription": "De primer a sexto grado de primaria y primer año de secundaria.",
+		"DetailedDescription": "Descripción de Clases de Matemática",
+		"price":{
+			"type": "hour",
+			"value": 1.99
+		}
+	}
+]
