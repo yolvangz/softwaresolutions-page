@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="css/all.min.css">
 		<link rel="stylesheet" href="css/landing.css">
 		<link rel="icon" href="images/favicon.png" type="image/png">
+		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 		<base href="./">
 	</head>
 	<body>
@@ -31,13 +32,13 @@
 				</button>
 				<div class="navbar-collapse collapse" id="navbarNav">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item text-center">
+						<li class="nav-item text-center d-md-flex align-items-center">
 							<a href="#quienes-somos" class="nav-link">¿Quiénes somos?</a>
 						</li>
-						<li class="nav-item text-center">
+						<li class="nav-item text-center d-md-flex align-items-center">
 							<a href="#servicios" class="nav-link">Servicios</a>
 						</li>
-						<li class="nav-item text-center">
+						<li class="nav-item text-center d-md-flex align-items-center">
 							<a href="#contacto" class="nav-link">Contacto</a>
 						</li>
 					</ul>
@@ -75,7 +76,7 @@
 			</div>
 			<div class="container text-center">
 				<div class="px-md-5 py-5 mx-auto text-dark">
-					<h2 class="d-none d-md-block font-weight-bold mb-3">¿Quiénes somos?</h2>
+					<h2 class="section-title d-none d-md-block font-weight-bold mb-3">¿Quiénes somos?</h2>
 					<p class="section-description">
 						En Software Solutions nuestra misión va más allá de simplemente brindar soluciones de tecnología. Ayudamos a nuestros clientes a lograr la excelencia en sus operaciones para que puedan enfocarse en hacer negocios. Nuestra gama de servicios garantiza a nuestros clientes mantenerse siempre a la vanguardia en este mundo de avances permanentes para así lograr el éxito.
 					</p>
@@ -204,7 +205,7 @@
 				<div class="col p-5 d-flex align-items-center">
 					<div class="text-md-center">
 						<h2 class="d-none d-md-block font-weight-bold mb-3 ml-4">Contáctenos</h2>
-						<div class="d-flex my-3">
+						<div class="d-flex my-3 contact-item">
 							<span class="pt-2 mr-2">
 								<i class="fas fa-map-marker-alt fa-2x"></i>
 							</span>
@@ -212,7 +213,7 @@
 								<a href="https://goo.gl/maps/AdMuXYzaSAqarWNS9">Puerta Maraven, calle Dabajuro Urb. Chicagua II. 4125 Punto Fijo, Edo. Falcón</a>
 							</p>
 						</div>
-						<div class="d-flex my-3">
+						<div class="d-flex my-3 contact-item">
 							<span class="pt-2 mr-2">
 								<i class="fas fa-envelope fa-2x"></i>
 							</span>
@@ -220,7 +221,7 @@
 								<a href="mailto:yolvanz@hotmail.com">yolvanz@hotmail.com</a>
 							</p>
 						</div>
-						<div class="d-flex my-3">
+						<div class="d-flex my-3 contact-item">
 							<span class="pt-2 mr-2">
 								<i class="fas fa-phone-alt fa-2x"></i>
 							</span>
@@ -231,7 +232,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="height:250px;">
+			<div style="height:250px;" id="mapa">
 				<iframe width="100%" height="100%" frameborder="0" src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=11.651489926122343,-70.18700598978333+(Software%20Solutions%20F.P.)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
 			</div>
 		</section>
@@ -248,6 +249,6 @@
 		<script src="js/popper.min.js" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" charset="utf-8"></script>
 		<script src="js/smoothScroll.js" charset="utf-8"></script>
-		<script src="js/main.js" charset="utf-8"></script>
+		<script type="module" src="js/main.js" charset="utf-8"></script>
 	</body>
 </html>

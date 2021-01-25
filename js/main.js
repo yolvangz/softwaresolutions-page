@@ -1,3 +1,5 @@
+import * as scrollReveal from './modules/animations.js';
+
 function changeMenuIcon (ExpandTo, icon) {
 	if(ExpandTo){
 		icon.className = icon.className.replace('fa-bars', 'fa-times');
@@ -20,4 +22,6 @@ window.addEventListener('load', function(){
 			}
 		});
 	}
+	// Adding ScrollReveal Animations
+	scrollReveal.landingAnimations();
 });
