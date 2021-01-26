@@ -90,4 +90,8 @@ export function landingAnimations (){
 		distance: '50px',
 		interval: 400,
 	});	
+	sr.reveal('#serviceModal', {
+	origin: 'bottom',
+	duration: 0
+	});
 }

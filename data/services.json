@@ -1,0 +1,86 @@
+[
+	{
+		"name": "Mantenimiento Predictivo de Software",
+		"category": ["Computación", "Reparación"],
+		"shortDescription": "",
+		"detailedDescription": "Descripción de Mantenimiento Predictivo",
+		"price":{
+			"type": "from",
+			"value": 4.99
+		},
+		"image": {
+			"name": "Chequeo de Laptop", 
+			"source": "images/1280/laptop-health_1280.jpg"
+		}
+	},
+	{
+		"name": "Mantenimiento Preventivo de Software",
+		"category": ["Computación", "Reparación"],
+		"shortDescription": "",
+		"detailedDescription": "Descripción de Mantenimiento Preventivo",
+		"price":{
+			"type": "from",
+			"value": 7.99
+		},
+		"image": {
+			"name": "Técnico diagnosticando computador", 
+			"source": "images/1280/man-technician_1280.jpg"
+		}
+	},
+	{
+		"name": "Mantenimiento Correctivo de Software",
+		"category": ["Computación", "Reparación"],
+		"shortDescription": "",
+		"detailedDescription": "Descripción de Mantenimiento Correctivo",
+		"price":{
+			"type": "from",
+			"value": 9.99
+		},
+		"image": {
+			"name": "Reparando una Mac", 
+			"source": "images/1280/imac-repair-2_1280.jpg"
+		}
+	},
+	{
+		"name": "Asesoría para Armado de PC Gaming",
+		"category": ["Computación", "Asesoría"],
+		"shortDescription": "",
+		"detailedDescription": "Descripción de Asesoría para Armado de PC Gaming",
+		"price":{
+			"type": "from",
+			"value": 4.99
+		},
+		"image": {
+			"name": "Mujer jugando LOL en PC Gamer", 
+			"source": "images/1280/woman-gamer_1280.jpg"
+		}
+	},
+	{
+		"name": "Mantenimiento de Cámaras de Seguridad",
+		"category": ["Seguridad", "CCTV"],
+		"shortDescription": "",
+		"detailedDescription": "Descripción de Mantenimiento de Cámaras de Seguridad",
+		"price":{
+			"type": "variable",
+			"value": null
+		},
+		"image": {
+			"name": "Cámaras de seguridad vigilando en edificio", 
+			"source": "images/1280/camera-monitoring_1280.jpg"
+		}
+	},
+	{
+		"name": "Clases de Matemática Básica",
+		"category": ["Educación"],
+		"shortDescription": "De primer a sexto grado de primaria y primer año de secundaria.",
+		"detailedDescription": "Descripción de Clases de Matemática",
+		"price":{
+			"type": "hour",
+			"value": 1.99
+		},
+		"image": {
+			"name": "Clase de Matemática en salón de Clase", 
+			"source": "images/1280/classroom-math_1280.jpg"
+		}
+	}
+]

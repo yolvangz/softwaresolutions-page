@@ -1,5 +1,6 @@
 html.sr{
 	visibility: hidden;
+	overflow-x: hidden;
 }
 @mixin animated{
 	transition: 0.2s all;
