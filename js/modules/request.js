@@ -1,5 +1,5 @@
 // Local URL Request
-export const requestURL = "http://localhost:3000/data/services.json";
+export const requestURL = 'http://' + window.location.hostname + window.location.pathname + '/data/services.json';
 // Server Request
 // const requestURL = "http://softwaresolutions.com.ve/data/services.json";
 export function requestServicesInfo(){

@@ -17,22 +17,6 @@
 		}
 	}
 }
-#serviceModal{
-	.modalImg{
-		width: 100%;
-		height: 100px;
-		img{
-			height: inherit;
-			object-fit: cover;
-		}
-	}
-	.modal-header{
-		font-family: var(--sans-2);
-	}
-	.modal-footer{
-		@extend .modal-header;
-	}
-}
 @media screen and (max-width: 768px) {
 	.section-description{
 		font-size: 2em;
