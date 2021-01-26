@@ -10,7 +10,7 @@
 		},
 		"image": {
 			"name": "Chequeo de Laptop", 
-			"source": "images/1280/laptop-health_1280.jpg"
+			"source": "images/640/laptop-health_640.jpg"
 		}
 	},
 	{
@@ -24,7 +24,7 @@
 		},
 		"image": {
 			"name": "Técnico diagnosticando computador", 
-			"source": "images/1280/man-technician_1280.jpg"
+			"source": "images/640/man-technician_640.jpg"
 		}
 	},
 	{
@@ -38,7 +38,7 @@
 		},
 		"image": {
 			"name": "Reparando una Mac", 
-			"source": "images/1280/imac-repair-2_1280.jpg"
+			"source": "images/640/imac-repair-2_640.jpg"
 		}
 	},
 	{
@@ -52,7 +52,7 @@
 		},
 		"image": {
 			"name": "Mujer jugando LOL en PC Gamer", 
-			"source": "images/1280/woman-gamer_1280.jpg"
+			"source": "images/640/woman-gamer_640.jpg"
 		}
 	},
 	{
@@ -66,7 +66,7 @@
 		},
 		"image": {
 			"name": "Cámaras de seguridad vigilando en edificio", 
-			"source": "images/1280/camera-monitoring_1280.jpg"
+			"source": "images/640/camera-monitoring_640.jpg"
 		}
 	},
 	{
@@ -80,7 +80,7 @@
 		},
 		"image": {
 			"name": "Clase de Matemática en salón de Clase", 
-			"source": "images/1280/classroom-math_1280.jpg"
+			"source": "images/640/classroom-math_640.jpg"
 		}
 	}
 ]
