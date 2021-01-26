@@ -12,7 +12,15 @@ export function getAllAnchors () {
 	});
 }
 export function openModalService (event) {
+	//Clearing services
+	const servicesInfo = window.services;
+	delete window.services;
+	// Get index service of parent
 	const serviceIndex = parseInt(event.target.dataset.serviceIndex);
+	sendInfoToModal(servicesInfo[serviceIndex]);
+}
+function sendInfoToModal(service){
+	// Get Modal DOM model
 	const modal = {
 		name: [
 			document.querySelector('#serviceModal .modal-title'),
@@ -24,5 +32,5 @@ export function openModalService (event) {
 		price: document.getElementById('servicePrice'),
 		image: document.getElementById('serviceImg')
 	}
-	window.alert('opened Service ' + serviceIndex);
+	console.log(service);
 }

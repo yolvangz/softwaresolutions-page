@@ -7,7 +7,5 @@ import * as services from './modules/services.js';
 addHeader();
 
 window.addEventListener('load', function () {
-	const servicesInfo = window.services;
-	delete window.services;
 	services.getAllAnchors();
 });
