@@ -54,7 +54,6 @@ function sendInfoToModal(service){
 		switch (property){
 			case 'name':
 				for (var i = 0; i < modal[property].length; i++) {
-					console.log(modal[property][i]);
 					modal[property][i].innerHTML = service[property];
 				}
 				break;
