@@ -1,12 +1,75 @@
 import * as request from './request.js';
+"use strict";
 
+// HTML Template about modal content
+window.modalHTML = {
+	info: `
+	<div class="modal-header font-weight-bold">
+		<h5 class="modal-title">Servicios</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true"><i class="fas fa-times"></i></span>
+		</button>
+	</div>
+	<div class="modal-body">
+		<div class="container">
+			<!-- <h3>Nombre: <span id="serviceName"></span></h3> -->
+			<div class="modalImg">
+				<img src="/" alt="" id="serviceImg" class="img-fluid rounded">
+			</div>
+			<div class="serviceDetails">
+				<h5 class="my-3 h6 font-weight-bold">
+				Categorías: 
+					<span id="serviceCategory">
+					
+					</span>
+				</h5>
+				<p id="serviceShortDescription" class="lead"></p>
+				<p class="modal-description" id="serviceDescription">
+					Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Ullam rem tenetur, eius. Sint consequuntur sit maiores expedita labore vitae aspernatur laboriosam tenetur cum fugit beatae pariatur, veniam recusandae vel quasi.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer justify-content-start">
+		<h5 class="h3">
+			<small class="font-weight-normal">
+				<span class="font-weight-bold">Precio: </span>
+				<span id="servicePrice"></span>
+			</small>
+		</h5>
+	</div>
+	`,
+	error: `
+	<div class="modal-header font-weight-bold">
+		<h5 class="modal-title">Servicios</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true"><i class="fas fa-times"></i></span>
+		</button>
+	</div>
+	<div class="modal-body">
+		<div class="modal-error container d-flex justify-content-center align-items-center">
+			<div class="d-flex flex-column text-center">
+				<span class="h2 mb-3">Lo siento, un error ha ocurrido.</span>
+				<span class="h5 mb-4">Vuelva a cargar el sitio para cargar el contenido. <br> <small>(Si el problema persiste, intente más tarde)</small></span>
+				<i class="mb-4 fas fa-frown fa-7x"></i>
+				<button class="btn btn-warning" onclick="location.reload()">Cargar de nuevo</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer justify-content-start">
+		<h5 class="h3">
+		&nbsp;
+		</h5>
+	</div>
+	`
+}
 /* 
 	It makes JSON request & send an addEventListener
 	to each anchor in services, with a data-serviceIndex attribute
 */
-export function getAllAnchors () {
+export async function getAllAnchors () {
 	// Make JSON request
-	request.requestServicesInfo();
+	window.servicesInfo = await request.getServices();
 	// Get All Services items
 	const cardItems = document.querySelectorAll('#servicios .grid-item');
 	cardItems.forEach(function(cardItem, index){
@@ -26,18 +89,29 @@ export function getAllAnchors () {
 	open the modal
 */
 function openModalService (event) {
-	//Clearing services
-	const servicesInfo = window.services;
-	// Get index service of parent
-	const serviceIndex = parseInt(event.target.dataset.serviceIndex);
-	sendInfoToModal(servicesInfo[serviceIndex]);
+	const modalContent = document.querySelector('#serviceModal .modal-content');
+	// Check if request was successfull & info was catched in servicesInfo
+	if (window.servicesInfo === null) {
+		sendErrorToModal(modalContent);
+	} else {
+		// Get index service of parent
+		const serviceIndex = parseInt(event.target.dataset.serviceIndex);
+		sendInfoToModal(modalContent, window.servicesInfo[serviceIndex]);
+	}
 	// Toggle modal
 	$('#serviceModal').modal('show');
 }
 /*
+	It push a error message into the modal dialog window
+*/
+function sendErrorToModal (modalBody) {
+	modalBody.innerHTML = window.modalHTML.error;
+}
+/*
 	It push all the service information into the modal dialog window
 */
-function sendInfoToModal(service){
+function sendInfoToModal(modalBody, service){
+	modalBody.innerHTML = window.modalHTML.info;
 	// Get Modal DOM model
 	const modal = {
 		name: [

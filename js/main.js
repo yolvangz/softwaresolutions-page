@@ -1,4 +1,4 @@
-
+"use strict";
 // Importing modules
 import {addHeader} from './modules/header.js';
 import * as services from './modules/services.js';
