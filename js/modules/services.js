@@ -30,14 +30,6 @@ window.modalHTML = {
 			</div>
 		</div>
 	</div>
-	<div class="modal-footer justify-content-start">
-		<h5 class="h3">
-			<small class="font-weight-normal">
-				<span class="font-weight-bold">Precio: </span>
-				<span id="servicePrice"></span>
-			</small>
-		</h5>
-	</div>
 	`,
 	error: `
 	<div class="modal-header font-weight-bold">
@@ -47,7 +39,7 @@ window.modalHTML = {
 		</button>
 	</div>
 	<div class="modal-body">
-		<div class="modal-error container d-flex justify-content-center align-items-center">
+		<div class="modal-error container d-flex justify-content-center align-items-center py-4">
 			<div class="d-flex flex-column text-center">
 				<span class="h2 mb-3">Lo siento, un error ha ocurrido.</span>
 				<span class="h5 mb-4">Vuelva a cargar el sitio para cargar el contenido. <br> <small>(Si el problema persiste, intente más tarde)</small></span>
@@ -55,11 +47,6 @@ window.modalHTML = {
 				<button class="btn btn-warning" onclick="location.reload()">Cargar de nuevo</button>
 			</div>
 		</div>
-	</div>
-	<div class="modal-footer justify-content-start">
-		<h5 class="h3">
-		&nbsp;
-		</h5>
 	</div>
 	`
 }
@@ -124,23 +111,14 @@ function sendInfoToModal(modalBody, service){
 	modalBody.innerHTML = window.modalHTML.info;
 	// Get Modal DOM model
 	const modal = {
-		name: [
-			// document.getElementById('serviceName'),
-			document.querySelector('#serviceModal .modal-title')
-		],
+		name: document.querySelector('#serviceModal .modal-title'),
 		category: document.getElementById('serviceCategory'),
 		shortDescription: document.getElementById('serviceShortDescription'),
 		detailedDescription: document.getElementById('serviceDescription'),
-		price: document.getElementById('servicePrice'),
 		image: document.getElementById('serviceImg')
 	}
 	for (var property in modal){
 		switch (property){
-			case 'name':
-				for (var i = 0; i < modal[property].length; i++) {
-					modal[property][i].innerHTML = service[property];
-				}
-				break;
 			case 'image':
 				insertImage(modal[property], service[property]);
 				break;

@@ -1,5 +1,32 @@
-export const sr = ScrollReveal();
-export function landingAnimations (){
+"user strict";
+
+/*
+	It applies the respective animation function as the given parameters catched
+	(if parameter is not found or is not valid, it cancels animation & show a console error).
+	Also get the ScrollReveal object into a variable
+	(if declaration is failed, it cancels animation & show a console error).
+*/
+export function initAnimations(page){
+	try{
+		const sr = ScrollReveal();
+		switch (page){
+			case 'landing':
+				landingAnimations(sr);
+				break;
+			default:
+				console.error(`Sorry, \"${page}\" is not a valid parameter at initAnimations()`);
+				document.querySelector('html.sr').style.visibility = 'visible';
+		}
+	}catch(e){
+		console.error(`${e.name}: ${e.message}`);
+		document.querySelector('html.sr').style.visibility = 'visible';
+	}
+}
+
+/*
+	It applies the landing page animations
+*/
+function landingAnimations (sr) {
 	const hero = [
 		document.querySelector('#hero .hero-title'),
 		document.querySelector('#hero .hero-title + p.lead')
