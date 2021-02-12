@@ -9,5 +9,5 @@ addHeader();
 
 window.addEventListener('load', function () {
 	scrollReveal.landingAnimations();
-	services.getAllAnchors();
+	services.initServices();
 });

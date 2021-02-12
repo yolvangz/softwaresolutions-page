@@ -41,7 +41,7 @@ window.modalHTML = {
 	`,
 	error: `
 	<div class="modal-header font-weight-bold">
-		<h5 class="modal-title">Servicios</h5>
+		<h5 class="modal-title"></h5>
 		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				<span aria-hidden="true"><i class="fas fa-times"></i></span>
 		</button>
@@ -63,13 +63,24 @@ window.modalHTML = {
 	</div>
 	`
 }
-/* 
-	It makes JSON request & send an addEventListener
-	to each anchor in services, with a data-serviceIndex attribute
+/*
+	It get the JSON info from global constant.
+	In case of fail, it set the variable to null.
 */
-export async function getAllAnchors () {
+export async function initServices () {
 	// Make JSON request
-	window.servicesInfo = await request.getServices();
+	try{
+		setAllAnchors();
+		window.servicesInfo = await request.getServices();
+	}catch{
+		window.servicesInfo = null;
+	}
+}
+/*
+	Send an addEventListenerto each anchor in services,
+	with a data-serviceIndex attribute
+*/
+function setAllAnchors () {
 	// Get All Services items
 	const cardItems = document.querySelectorAll('#servicios .grid-item');
 	cardItems.forEach(function(cardItem, index){
@@ -83,7 +94,6 @@ export async function getAllAnchors () {
 	});
 }
 /*
-	It get the JSON info from global constant,
 	get the service index from data attribute,
 	send it to sendInfoToModal function &
 	open the modal
@@ -91,7 +101,7 @@ export async function getAllAnchors () {
 function openModalService (event) {
 	const modalContent = document.querySelector('#serviceModal .modal-content');
 	// Check if request was successfull & info was catched in servicesInfo
-	if (window.servicesInfo === null) {
+	if (window.servicesInfo === undefined || window.servicesInfo === null) {
 		sendErrorToModal(modalContent);
 	} else {
 		// Get index service of parent
