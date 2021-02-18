@@ -15,6 +15,7 @@
 	}
 	.modal-header{
 		font-family: var(--sans-2);
+		border-bottom: none;
 	}
 	.modal-footer{
 		@extend .modal-header;

@@ -3,13 +3,13 @@
 		"name": "Mantenimiento Predictivo de Software",
 		"category": ["Computación", "Reparación"],
 		"shortDescription": "",
-		"detailedDescription": "Descripción de Mantenimiento Predictivo",
-		"price":{
+		"detailedDescription": "<p>Prestamos nuestro servicios de revisión para diagnosticar cualquier posible problema que tenga su equipo, trátese de una computadora de escritorio (PC) o laptop.</p>",
+		"price": {
 			"type": "from",
 			"value": 4.99
 		},
 		"image": {
-			"name": "Chequeo de Laptop", 
+			"name": "Una Laptop con un instrumento médico encima de ella, esperando su diagnóstico", 
 			"source": "images/640/laptop-health_640.webp"
 		}
 	},
@@ -17,13 +17,13 @@
 		"name": "Mantenimiento Preventivo de Software",
 		"category": ["Computación", "Reparación"],
 		"shortDescription": "",
-		"detailedDescription": "Descripción de Mantenimiento Preventivo",
-		"price":{
+		"detailedDescription": "<p>Con una revisión completa, diagnosticamos cualquier problema de software que padezca su equipo, y lo arreglamos hasta dejarlo como nuevo. Ya sea un desperfecto en el OS, un virus o algún programa especial que desee, nosotros se lo solucionamos.</p>",
+		"price": {
 			"type": "from",
 			"value": 7.99
 		},
 		"image": {
-			"name": "Técnico diagnosticando computador", 
+			"name": "Técnico diagnosticando el estado de un computador de escritorio", 
 			"source": "images/640/man-technician_640.webp"
 		}
 	},
@@ -31,13 +31,13 @@
 		"name": "Mantenimiento Correctivo de Software",
 		"category": ["Computación", "Reparación"],
 		"shortDescription": "",
-		"detailedDescription": "Descripción de Mantenimiento Correctivo",
-		"price":{
+		"detailedDescription": "<p>Si su computador dejó de funcionar, nuestros servicios de reparación y actualización la restaurarán a su óptimo estado, preparándola desde cero con los últimos programas actualizados y sistema operativo 100% funcional, todo esto sin que pierda sus documentos y trabajos preciados.</p>",
+		"price": {
 			"type": "from",
 			"value": 9.99
 		},
 		"image": {
-			"name": "Reparando una Mac", 
+			"name": "Un computador Mac desarmado para su reparación", 
 			"source": "images/640/imac-repair-2_640.webp"
 		}
 	},
@@ -45,13 +45,13 @@
 		"name": "Asesoría para Armado de PC Gaming",
 		"category": ["Computación", "Asesoría"],
 		"shortDescription": "",
-		"detailedDescription": "Descripción de Asesoría para Armado de PC Gaming",
-		"price":{
+		"detailedDescription": "<p>¿Deseas armar tu propia PC Gaming, pero no sabes por dónde comenzar? No te preocupes, Díganos en una reunión de 5 minutos el uso que piensas darle, los programas y juegos que deseas que soporte y tu presupuesto disponible en particular y nos ocupamos del proceso de buscar en el mercado, evaluar opciones y recopilar la información necesaria hasta conseguir el PC ideal para sus necesidades, ajustado a tu bolsillo.</p><p>Ocúpese sólo de comprar los componentes, y deje el armado y preparación del PC en nuestras manos.</p>",
+		"price": {
 			"type": "from",
 			"value": 4.99
 		},
 		"image": {
-			"name": "Mujer jugando LOL en PC Gamer", 
+			"name": "Una mujer gamer jugando League of Legends en PC Gamer", 
 			"source": "images/640/woman-gamer_640.webp"
 		}
 	},
@@ -59,28 +59,27 @@
 		"name": "Mantenimiento de Cámaras de Seguridad",
 		"category": ["Seguridad", "CCTV"],
 		"shortDescription": "",
-		"detailedDescription": "Descripción de Mantenimiento de Cámaras de Seguridad",
-		"price":{
-			"type": "variable",
-			"value": null
+		"detailedDescription": "<p>Prestamos servicios de mantenimiento para sistemas de vigilancia de circuito cerrado (CCTV), donde hacemos revisiones en el sistema en general y diagnosticamos las posibles fallas presentes en sus componentes, tales como el DVR y las cámaras por individual, con mantenimiento preventivo y correctivo dependiendo del caso.</p>",
+		"price": {
+			"type": "variable"
 		},
 		"image": {
-			"name": "Cámaras de seguridad vigilando en edificio", 
+			"name": "Unas Cámaras de seguridad vigilando desde un muro de ladrillos", 
 			"source": "images/640/camera-monitoring_640.webp"
 		}
 	},
 	{
-		"name": "Clases de Matemática Básica",
+		"name": "Curso de Elaboración de Páginas Web",
 		"category": ["Educación"],
-		"shortDescription": "De primer a sexto grado de primaria y primer año de secundaria.",
-		"detailedDescription": "Descripción de Clases de Matemática",
-		"price":{
+		"shortDescription": "Aprende a crear tus páginas web con HTML, CSS y JavaScript",
+		"detailedDescription": "<p>El mundo de la web está creciendo a pasos agingantados. No seas un consumidor más y <strong>empieza a construirlo tú mismo</strong>.</p><p>En este curso, se te enseñarán las 3 principales tecnologías detrás de ellos y cómo utilizarlas:</p><ul><li>Aprenderás a contruir páginas web desde cero con HTML, así como las novedades de su último estándar: <strong>HTML5</strong>.</li><li>Con <strong>CSS3</strong> les darás la apariencia que desees y crearás hermosos sitios que se adapten a dispositivos móviles con el concepto de <strong>Responsive Design</strong>.</li><li>Conocerás el lenguaje de programación <strong>JavaScript</strong>, las bondades que ofrece y cómo utilizarlo para crear sitios dinámicos e interactivos.</li></ul><p>Aprenda todo esto en su hogar con nuestras <strong>clases presenciales</strong> impartidas por nuestro <strong>instructor personal</strong>, a través de ejercicios prácticos y pequeños proyectos de examen.</p><p> ¡No espere más, y empieza a trazar tu camino como <strong>desarrollador web profesional</strong>!</p>",
+		"price": {
 			"type": "hour",
-			"value": 1.99
+			"value": 2.99
 		},
 		"image": {
-			"name": "Clase de Matemática en salón de Clase", 
-			"source": "images/640/classroom-math_640.webp"
+			"name": "Vista desde arriba de una laptop plateada con teclas negras en un escritorio blanco, con unos audífonos conectados y junto a una libreta de notas con un lápiz y un libro sobre HTML y CSS", 
+			"source": "images/640/web-design_640.webp"
 		}
 	}
 ]

@@ -4,16 +4,16 @@ import * as request from './request.js';
 // HTML Template about modal content
 window.modalHTML = {
 	info: `
-	<div class="modal-header font-weight-bold">
+	<div class="modal-header font-weight-bold border-bottom-0 shadow-sm">
 		<h5 class="modal-title">Servicios</h5>
 		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				<span aria-hidden="true"><i class="fas fa-times"></i></span>
 		</button>
 	</div>
-	<div class="modal-body">
-		<div class="container">
+	<div class="modal-body px-lg-5 pt-xl-4 pb-xl-5">
+		<div class="px-2 px-lg-4 px-xl-5">
 			<!-- <h3>Nombre: <span id="serviceName"></span></h3> -->
-			<div class="modalImg">
+			<div class="modalImg mb-3 mb-lg-4 pt-lg-2">
 				<img src="/" alt="" id="serviceImg" class="img-fluid rounded">
 			</div>
 			<div class="serviceDetails">
@@ -24,15 +24,15 @@ window.modalHTML = {
 					</span>
 				</h5>
 				<p id="serviceShortDescription" class="lead"></p>
-				<p class="modal-description" id="serviceDescription">
+				<div class="modal-description" id="serviceDescription">
 					Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Ullam rem tenetur, eius. Sint consequuntur sit maiores expedita labore vitae aspernatur laboriosam tenetur cum fugit beatae pariatur, veniam recusandae vel quasi.
-				</p>
+				</div>
 			</div>
 		</div>
 	</div>
 	`,
 	error: `
-	<div class="modal-header font-weight-bold">
+	<div class="modal-header font-weight-bold border-bottom-0 shadow-sm">
 		<h5 class="modal-title"></h5>
 		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				<span aria-hidden="true"><i class="fas fa-times"></i></span>
@@ -107,7 +107,7 @@ function sendErrorToModal (modalBody) {
 /*
 	It push all the service information into the modal dialog window
 */
-function sendInfoToModal(modalBody, service){
+function sendInfoToModal(modalBody, service) {
 	modalBody.innerHTML = window.modalHTML.info;
 	// Get Modal DOM model
 	const modal = {
