@@ -1,0 +1,35 @@
+#serviceModal{
+	.modalImg{
+		max-width: 75%;
+		margin: 0 auto;
+		max-height: 250px;
+		overflow: hidden;
+		img{
+			max-width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+	}
+	.modal-description {
+		font-size: 16px;
+	}
+	.modal-header{
+		font-family: var(--sans-2);
+		border-bottom: none;
+	}
+	.modal-footer{
+		@extend .modal-header;
+	}
+	background-color: rgba(0,0,0,0.5);
+	.modal-error{
+		min-height: 150px;
+	}
+}
+@media screen and (min-width: 768px) {
+	#serviceModal{
+		.modalImg{
+			max-width: 60%;
+			// height: 300px;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.hero-title{
+	font:{
+		size: 3em;
+		weight: bold;
+	}
+}
+.hero-image-wrapper{
+	max-width: 36vw;
+	height: 75vh;
+	max-height: 1000px;
+}
+.hero-image-wrapper img{
+	height: inherit;
+	object-fit: cover;
+}

@@ -1,0 +1,26 @@
+.navbar{
+	background-color: $white;
+}
+.navbar-text a.btn-link{
+	@include animated;
+}
+.navbar-text a.btn-link:hover{
+	color: var(--primary);
+}
+.navbar-brand a{
+	text-decoration: none;
+	color: var(--indigo);
+}
+.navbar-brand img{
+	max-height: 64px;
+}
+.navbar-toggle-icon{
+	@extend body;
+}
+.navbar-nav .nav-link{
+	@extend body;
+	@include animated;
+}
+.navbar-nav .nav-link:hover{
+	color: var(--indigo-80) !important;
+}

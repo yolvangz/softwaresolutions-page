@@ -1,0 +1,29 @@
+@import "fonts";
+$white: #ffffff;
+// Custom Colors
+$indigo: #2A0852;
+$indigo-80: rgba($indigo, 0.8);
+$indigo-60: rgba($indigo, 0.6);
+$indigo-40: rgba($indigo, 0.4);
+$indigo-20: rgba($indigo, 0.2);
+$facebook-color-new: #1773EA;
+$facebook-color-old: #3A5795;
+$instagram-gradient: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+$instagram-gradient-hover: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+// Custom Fonts
+$font1: 'Lato', sans-serif;
+$font2: 'Roboto', sans-serif;
+
+:root{
+	--indigo: #{$indigo};
+	--indigo-80: #{$indigo-80};
+	--indigo-60: #{$indigo-60};
+	--indigo-40: #{$indigo-40};
+	--indigo-20: #{$indigo-20};
+	--facebook-new: #{$facebook-color-new};
+	--facebook-old: #{$facebook-color-old};
+	--instagram: #{$instagram-gradient};
+	--instagram-hover: #{$instagram-gradient-hover};
+	--sans: #{$font1};
+	--sans-2: #{$font2};
+}
