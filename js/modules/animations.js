@@ -1,4 +1,4 @@
-"user strict";
+"use strict";
 
 /*
 	It applies the respective animation function as the given parameters catched
@@ -116,7 +116,27 @@ function landingAnimations (sr) {
 		delay: 500,
 		distance: '50px',
 		interval: 400,
-	});	
+	});
+	// Social Media Buttons
+	sr.reveal('#socialMedia a.btn',{
+		mobile: true,
+		desktop: false,
+		origin: 'bottom',
+		duration: 2000,
+		distance: '100px',
+		viewFactor: 0.4,
+		interval: 500,
+	});
+	sr.reveal('#socialMedia a.btn',{
+		mobile: false,
+		desktop: true,
+		origin: 'right',
+		duration: 2000,
+		distance: '100px',
+		viewFactor: 0.4,
+		interval: 500,
+	});
+	// Remove hidden to modal dialog
 	sr.reveal('#serviceModal', {
 	origin: 'bottom',
 	duration: 0
