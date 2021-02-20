@@ -1,5 +1,32 @@
-export const sr = ScrollReveal();
-export function landingAnimations (){
+"use strict";
+
+/*
+	It applies the respective animation function as the given parameters catched
+	(if parameter is not found or is not valid, it cancels animation & show a console error).
+	Also get the ScrollReveal object into a variable
+	(if declaration is failed, it cancels animation & show a console error).
+*/
+export function initAnimations(page){
+	try{
+		const sr = ScrollReveal();
+		switch (page){
+			case 'landing':
+				landingAnimations(sr);
+				break;
+			default:
+				console.error(`Sorry, \"${page}\" is not a valid parameter at initAnimations()`);
+				document.querySelector('html.sr').style.visibility = 'visible';
+		}
+	}catch(e){
+		console.error(`${e.name}: ${e.message}`);
+		document.querySelector('html.sr').style.visibility = 'visible';
+	}
+}
+
+/*
+	It applies the landing page animations
+*/
+function landingAnimations (sr) {
 	const hero = [
 		document.querySelector('#hero .hero-title'),
 		document.querySelector('#hero .hero-title + p.lead')
@@ -89,7 +116,27 @@ export function landingAnimations (){
 		delay: 500,
 		distance: '50px',
 		interval: 400,
-	});	
+	});
+	// Social Media Buttons
+	sr.reveal('#socialMedia a.btn',{
+		mobile: true,
+		desktop: false,
+		origin: 'bottom',
+		duration: 2000,
+		distance: '100px',
+		viewFactor: 0.4,
+		interval: 500,
+	});
+	sr.reveal('#socialMedia a.btn',{
+		mobile: false,
+		desktop: true,
+		origin: 'right',
+		duration: 2000,
+		distance: '100px',
+		viewFactor: 0.4,
+		interval: 500,
+	});
+	// Remove hidden to modal dialog
 	sr.reveal('#serviceModal', {
 	origin: 'bottom',
 	duration: 0

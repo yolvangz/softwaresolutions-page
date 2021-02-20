@@ -21,7 +21,15 @@
 	background-image: url(../images/1280/parallax-1.webp);
 }
 .parallax.bg-2{
-	background-image: url(../images/1280/conference-room_1280.jpg);
+	background-image: url(../images/1280/conference-room_1280.webp);
+}
+@media screen and (max-width: 640px){
+	.parallax.bg-1{
+		background-image: url(../images/640/parallax-1.webp);
+	}
+	.parallax.bg-2{
+		background-image: url(../images/640/conference-room_640.webp);
+	}
 }
 @media screen and (min-height: 450px){
 	.parallax{

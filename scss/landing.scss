@@ -16,8 +16,43 @@
 			color: var(--indigo-80);
 		}
 	}
+	.btn{
+		border: none;
+		transition: .5s all;
+	}
+	.btn[target=facebook]{
+		background: var(--facebook-new);
+	}
+	.btn[target=facebook]:hover{
+		background: var(--facebook-old);
+	}
+	.btn[target=instagram]{
+		z-index: 1;
+		position: relative;
+		background-image: var(--instagram);
+	}
+	.btn[target=instagram]:after{
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: opacity .5s;
+		border-radius: .3rem;
+		background-image: var(--instagram-hover);
+		z-index: 2;
+		opacity: 0;
+	}
+	.btn[target=instagram]:hover:after{
+		opacity: 1;
+	}
+	.btn[target=instagram] span.media-text{
+		position: relative;
+		z-index: 30;
+	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.section-description{
 		font-size: 2em;
 	}
