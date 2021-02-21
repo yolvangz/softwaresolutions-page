@@ -1,6 +1,9 @@
 .card{
 	.card-body{
-		@extend .card;
+		font:{
+			family: var(--sans-2) !important;
+			weight: 300 !important;
+		}
 	}
 	.card-img-top{
 		height: 200px;
@@ -21,16 +24,16 @@
 	.card-link{
 		opacity: 1;
 	}
-	font:{
-		family: var(--sans-2) !important;
-		weight: 300 !important;
-	}
 	.service-link{
 		cursor: pointer;
 		transition: opacity 0.2s;
 	}
 	h3.service-link:hover{
 		opacity: 0.8;
+	}
+	font:{
+		family: var(--sans-2) !important;
+		weight: 300 !important;
 	}
 }
 @media screen and (min-width: 567px) and (max-width: 768px){
