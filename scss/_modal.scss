@@ -10,8 +10,12 @@
 			object-fit: cover;
 		}
 	}
-	.modal-description {
+	.modal-description{
 		font-size: 16px;
+		a{
+			color: inherit;
+			font-weight: bold;
+		}
 	}
 	.modal-header{
 		font-family: var(--sans-2);
