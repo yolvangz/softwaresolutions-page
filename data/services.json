@@ -1,6 +1,6 @@
 [
 	{
-		"name": "Mantenimiento Predictivo de Software",
+		"name": "Mantenimiento Predictivo de Software y Hardware",
 		"category": ["Computación", "Reparación"],
 		"shortDescription": "",
 		"detailedDescription": "<p>Prestamos nuestros servicios de revisión para diagnosticar cualquier posible problema que tenga su equipo, trátese de una computadora de escritorio (PC) o laptop.</p>",
@@ -14,10 +14,10 @@
 		}
 	},
 	{
-		"name": "Mantenimiento Preventivo de Software",
+		"name": "Mantenimiento Preventivo de Software y Hardware",
 		"category": ["Computación", "Reparación"],
 		"shortDescription": "",
-		"detailedDescription": "<p>Con una revisión completa, diagnosticamos cualquier problema de software que padezca su equipo y lo arreglamos hasta dejarlo como nuevo. Ya sea un desperfecto en el OS, un virus o algún programa especial que desee, nosotros se lo solucionamos.</p>",
+		"detailedDescription": "<p>Con una revisión completa, diagnosticamos cualquier problema de software y hardware que padezca su equipo y lo arreglamos hasta dejarlo como nuevo. Ya sea un desperfecto en el OS, un virus o algún programa especial que desee, nosotros se lo solucionamos.</p>",
 		"price": {
 			"type": "from",
 			"value": 7.99
@@ -28,7 +28,7 @@
 		}
 	},
 	{
-		"name": "Mantenimiento Correctivo de Software",
+		"name": "Mantenimiento Correctivo de Software y Hardware",
 		"category": ["Computación", "Reparación"],
 		"shortDescription": "",
 		"detailedDescription": "<p>Si su computador dejó de funcionar, nuestros servicios de reparación y actualización la restaurarán a su óptimo estado, preparándola desde cero con los últimos programas actualizados y sistema operativo 100% funcional, todo esto sin que pierda sus documentos y trabajos preciados.</p>",
