@@ -1,2 +1,5 @@
-webfonts/custom/*
-images/template/*
+src/webfonts/custom/*
+src/images/template/*
+node_modules/*
+*.sublime-*
+*.code-*
