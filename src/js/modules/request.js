@@ -4,7 +4,7 @@ export {requestServicesInfo as getServices};
 // Server Request
 // Return the JSON services info as a JS Object
 async function requestServicesInfo(){
-	const requestURL = `http://${window.location.hostname}${window.location.pathname}data/services.json`;
+	const requestURL = `https://softwaresolutions.com.ve/data/services.json`;
 	let Request = new Promise(function (myResolve) {
 		const request = new XMLHttpRequest();
 		request.open('GET', requestURL);
