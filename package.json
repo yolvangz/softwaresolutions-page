@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap4-init-template",
+  "version": "1.0.1",
+  "description": "Una plantilla básica para desarrollar proyectos profesionales de Bootstrap 4 con Sass y Gulp.js",
+  "main": "index.js",
+  "scripts": {
+    "start-server": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.0"
+  }
+}
