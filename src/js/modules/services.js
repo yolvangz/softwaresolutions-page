@@ -58,7 +58,7 @@ export async function initServices () {
 	// Make JSON request
 	try{
 		setAllAnchors();
-		window.servicesInfo = await request.getServices();
+		window.servicesInfo = await request.getRequest('https://softwaresolutions.com.ve/data/services.json');
 	}catch{
 		window.servicesInfo = null;
 	}
